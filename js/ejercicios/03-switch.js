@@ -48,3 +48,4 @@ switch (opcion) {
   default:
     alert("Opción no válida. Por favor, seleccione una opción del 1 al 3.");
 }
+
