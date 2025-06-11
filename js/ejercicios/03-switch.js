@@ -25,9 +25,11 @@ let saldo = 10000;
 
 switch (opcion) {
   case "1":
+  case "saldo":
     document.writeln("Su saldo actual es: $" + saldo);
     break;
   case "2":
+  case "deposito":
     const deposito = parseFloat(prompt("Ingrese la cantidad a depositar:"));
     if (deposito >= 1000 && deposito <= 2000000) {
       saldo = saldo + deposito;
@@ -37,6 +39,7 @@ switch (opcion) {
     }
     break;
   case "3":
+  case "extraccion":
     const extraccion = parseFloat(prompt("Ingrese la cantidad a extraer:"));
     if (extraccion <= saldo) {
       saldo = saldo - extraccion;
